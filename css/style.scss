@@ -1,0 +1,79 @@
+$color-Primary:#9356DC;
+$color-Secondary:#FF79DA;
+$color-Tertiary:#99E2D0;
+$color-background:#ececec;
+*{
+    margin: 0;
+    padding:0;
+}
+@media only screen and (max-width:767px){
+.logo{
+    text-align:center;
+    img{
+    width: 33%;
+     }
+    }
+.location{
+    background-color: $color-background;
+    text-align: center;
+    height: 12em;
+    &__nav{
+        display: flex;
+        justify-content:center;
+        background-color: darken($color-background,10%);
+        height: 2em;
+    }
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70%;
+    }
+}
+.header{
+    border: springgreen solid 2px;
+    margin-top: 42px;
+    text-align: start;
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 12em;
+        justify-content: space-evenly;
+    }
+}    
+.menu{
+    background-color: $color-background;
+    width: 100%;
+    margin-top: 30px;
+    h2{
+        padding: 10px;
+    }
+    &__cards{
+        border: yellow solid 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+        width: 90%;
+        margin: auto;
+    }
+    &__card1{
+        width: 100%;
+        border-radius: 20px;
+        overflow: auto;
+        height: 200px;
+        background-color: white;
+        img{
+            width: 100%;
+            height: 70%;
+        }
+    .menu__card1__desc{
+        padding: 10px;
+        
+    }    
+
+    }
+}
+}
+
