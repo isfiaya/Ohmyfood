@@ -1,0 +1,22 @@
+@media only screen and (max-width:767px){
+    footer{
+        background-color: #343333;
+        margin-top: 25px;
+        height: 180px;
+    }
+    .info{
+        color:ghostwhite;
+        padding:15px 0px 0px 25px ;
+        line-height: 1.5;
+        height: fit-content;
+        h3{
+            font-style: italic;
+            margin-bottom: 10px;
+            font-family: 'Shrikhand', cursive;
+            font-size: 20px;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+}
