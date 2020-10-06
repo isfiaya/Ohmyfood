@@ -15,7 +15,6 @@
 @media only screen and (max-width: 767px) {
   footer {
     background-color: #343333;
-    margin-top: 25px;
     height: 180px;
   }
   .info {
@@ -59,7 +58,7 @@
   .location {
     background-color: #ececec;
     text-align: center;
-    height: 13em;
+    height: 15em;
   }
   .location__nav {
     display: -webkit-box;
@@ -94,7 +93,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    height: 158px;
+    height: 190px;
     padding: 0 15px;
   }
   .location__menu button {
@@ -113,13 +112,13 @@
 
 @media only screen and (max-width: 767px) {
   .header {
-    border: springgreen solid 2px;
     margin-top: 20px;
     padding: 0 15px;
   }
+  .header h3 {
+    padding: 5px 0px 22px 5px;
+  }
   .header__btn {
-    margin: auto;
-    border: orangered solid 2px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -132,8 +131,19 @@
             justify-content: space-between;
     height: 12em;
     width: 90%;
+    padding-left: 10px;
   }
   .header__btn button {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     height: 50px;
     border-radius: 20px;
     border: white;
@@ -141,19 +151,37 @@
     -webkit-box-shadow: 7px 7px 13px -5px rgba(0, 0, 0, 0.47);
             box-shadow: 7px 7px 13px -5px rgba(0, 0, 0, 0.47);
   }
-  .header__btn i {
+  .header__btn button span {
+    background-color: #9356DC;
+    color: white;
+    font-weight: bold;
+    width: 1.6em;
+    line-height: 1.6em;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: -10px;
+  }
+  .header__btn button :hover {
+    background-color: #FF79DA;
+  }
+  .header__btn button i {
     margin-right: 20px;
   }
+}
+
+@media only screen and (max-width: 767px) {
   .menu {
     background-color: #ececec;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 45px;
+    height: 915px;
   }
   .menu h2 {
-    padding: 10px;
+    padding: 40px 0px 15px 20px;
   }
   .menu__cards {
-    border: yellow solid 2px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -170,7 +198,7 @@
     width: 100%;
     border-radius: 20px;
     overflow: auto;
-    height: 200px;
+    height: 187px;
     background-color: white;
   }
   .menu__card1 img {
@@ -178,7 +206,20 @@
     height: 70%;
   }
   .menu__card1 .menu__card1__desc {
-    padding: 10px;
+    padding: 5px 0px 0px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu__card1 .menu__card1__desc i {
+    cursor: pointer;
+    padding-right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
