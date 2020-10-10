@@ -1,0 +1,162 @@
+@media only screen and (max-width: 767px) {
+  .logo {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logo img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    background-color: #343333;
+    height: 180px;
+  }
+  .info {
+    color: ghostwhite;
+    padding: 15px 0px 0px 25px;
+    line-height: 1.5;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .info h3 {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .info i {
+    margin-right: 5px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  z-index: 1;
+}
+
+.hero img {
+  width: 100%;
+  height: 200px;
+}
+
+.menu {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #ececec;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+
+.menu .title {
+  padding: 15px 0px 0px 10px;
+  position: relative;
+}
+
+.menu h3 {
+  margin-top: 20px;
+  padding: 0 10px;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 500;
+}
+
+.menu i {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+.section h5 {
+  margin-top: 20px;
+  padding: 10px 10px;
+  font-weight: 500;
+}
+
+.section__btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  gap: 17px;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.41);
+          box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.41);
+}
+
+.btn :first-of-type {
+  font-weight: bold;
+}
+
+.btn :nth-of-type(2) {
+  font-size: smaller;
+}
+
+.btn :last-of-type {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  font-weight: bold;
+}
+
+.btn_order {
+  margin: auto;
+  padding: 30px 0 55px 0;
+}
+
+.btn_order button {
+  background-color: #FF79DA;
+  color: white;
+  width: 130px;
+  padding: 10px;
+  border-radius: 20px;
+  border: white;
+  outline: none;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+/*# sourceMappingURL=bastille.css.map */

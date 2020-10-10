@@ -103,7 +103,7 @@
         margin-top: 45px;
         height: 915px;
         h2{
-            padding: 40px 0px 15px 20px
+            padding: 40px 0px 15px 20px;
         }
         &__cards{
             display: flex;
@@ -122,21 +122,21 @@
             img{
                 width: 100%;
                 height: 70%;
-            }
+                }
+        }       
         .menu__card1__desc{
             padding: 5px 0px 0px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            position: relative;
             i{
-               
-                
                 cursor: pointer;
-                padding-right: 20px;
+                position: absolute;
+                right: 20px;
+                top: 15px;
             }
         }    
     
-        }
+        
     }
-}
+}    
+
 
