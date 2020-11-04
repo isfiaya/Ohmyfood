@@ -111,7 +111,7 @@ footer {
 .location__menu button {
   border: white;
   font-family: "Roboto", sans-serif;
-  width: 60%;
+  width: 200px;
   height: 40px;
   border-radius: 20px;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
@@ -131,17 +131,17 @@ footer {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.header {
+main {
   margin-top: 35px;
   padding: 0 15px;
 }
 
-.header h2 {
+main h3 {
   padding: 5px 0px 22px 5px;
   font-weight: bold;
 }
 
-.header__btn {
+.main__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +158,7 @@ footer {
   margin-top: 20px;
 }
 
-.header__btn button {
+.main__buttons button {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
@@ -182,7 +182,7 @@ footer {
   transition: all 0.5s ease-out;
 }
 
-.header__btn button span {
+.main__buttons button span {
   background-color: #9356DC;
   color: white;
   font-weight: bold;
@@ -195,34 +195,48 @@ footer {
   margin-left: -10px;
 }
 
-.header__btn button i {
+.main__buttons button i {
   margin-right: 20px;
 }
 
-.header__btn button:hover {
+.main__buttons button:hover {
   background-color: #f5edff;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-@media (min-width: 768px) {
-  .header__btn button {
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    margin-top: 25px;
+  }
+  main h3 {
+    text-align: center;
+    font-size: x-large;
+  }
+  .main__buttons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+  .main__buttons button {
     width: 45%;
   }
 }
 
-.menu {
+.restaurants {
   background-color: #f6f6f6;
   width: 100%;
   margin-top: 45px;
 }
 
-.menu h2 {
+.restaurants h2 {
   padding: 40px 0px 15px 20px;
   font-weight: bold;
 }
 
-.menu__cards {
+.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,11 +249,11 @@ footer {
   padding-bottom: 50px;
 }
 
-.menu__cards p {
+.cards p {
   opacity: 0.6;
 }
 
-.menu__card1 {
+.card {
   width: 100%;
   border-radius: 20px;
   overflow: auto;
@@ -250,14 +264,14 @@ footer {
           box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
 }
 
-.menu__card1 img {
+.card img {
   width: 100%;
   height: 71%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.menu__card1 span {
+.card span {
   position: absolute;
   background-color: #99E2D0;
   color: #278870;
@@ -270,26 +284,30 @@ footer {
   font-weight: bold;
 }
 
-.menu .menu__card1__desc {
+.card__desc {
   padding: 8px 0px 0px 15px;
   position: relative;
   line-height: 1.4;
 }
 
-.menu .menu__card1__desc i {
+.card__desc i {
   cursor: pointer;
   position: absolute;
   right: 20px;
   top: 15px;
 }
 
-.menu .menu__card1__desc i:hover {
+.card__desc i:hover {
   color: #9356DC;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .menu__card1 {
+  .card {
     width: 48%;
+  }
+  .restaurants h2 {
+    text-align: center;
+    padding: 25px 0px 25px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

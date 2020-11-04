@@ -31,7 +31,7 @@
     button {
       border: white;
       font-family: "Roboto", sans-serif;
-      width: 60%;
+      width: 200px;
       height: 40px;
       border-radius: 20px;
       background-image: $color-btn;
@@ -51,68 +51,80 @@
   }
 }
 
-.header {
+main {
   margin-top: 35px;
   padding: 0 15px;
-  h2 {
+  h3 {
     padding: 5px 0px 22px 5px;
     font-weight: bold;
   }
-  &__btn {
+}
+.main__buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 12em;
+  width: 90%;
+  padding-left: 10px;
+  margin-top: 20px;
+  button {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    background-color: #f6f6f6;
+    width: 95%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 12em;
-    width: 90%;
-    padding-left: 10px;
-    margin-top: 20px;
-    button {
+    align-items: center;
+    justify-content: start;
+    height: 50px;
+    border-radius: 20px;
+    border: white;
+    outline: none;
+    -webkit-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+    box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+    transition: all 0.5s ease-out;
+    span {
+      background-color: $color-Primary;
+      color: white;
       font-weight: bold;
-      font-family: "Roboto", sans-serif;
-      background-color: #f6f6f6;
-      width: 95%;
-      display: flex;
-      align-items: center;
-      justify-content: start;
-      height: 50px;
-      border-radius: 20px;
-      border: white;
-      outline: none;
-      -webkit-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
-      -moz-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
-      box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
-      transition: all 0.5s ease-out;
-      span {
-        background-color: $color-Primary;
-        color: white;
-        font-weight: bold;
-        width: 1.6em;
-        line-height: 1.6em;
-        margin-right: 5px;
-        text-align: center;
-        border-radius: 50%;
-        margin-right: 20px;
-        margin-left: -10px;
-      }
-      i {
-        margin-right: 20px;
-      }
+      width: 1.6em;
+      line-height: 1.6em;
+      margin-right: 5px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 20px;
+      margin-left: -10px;
     }
-
-    button:hover {
-      background-color: #f5edff;
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22);
+    i {
+      margin-right: 20px;
     }
   }
+  button:hover {
+    background-color: #f5edff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.22);
+  }
 }
-@media (min-width: 768px) {
-  .header__btn button {
+@media (min-width: 768px)  and (max-width: 1023px) {
+  main{
+    margin-top: 25px;
+  }
+  main h3{
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .main__buttons{
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    button {
     width: 45%;
   }
+  }
 }
 
-.menu {
+.restaurants {
   background-color: $color-background;
   width: 100%;
   margin-top: 45px;
@@ -120,7 +132,8 @@
     padding: 40px 0px 15px 20px;
     font-weight: bold;
   }
-  &__cards {
+}  
+.cards{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -131,8 +144,8 @@
     p {
       opacity: 0.6;
     }
-  }
-  &__card1 {
+}
+.card{
     width: 100%;
     border-radius: 20px;
     overflow: auto;
@@ -145,7 +158,6 @@
       height: 71%;
       object-fit: cover;
     }
-
     span {
       position: absolute;
       background-color: $color-Tertiary;
@@ -158,26 +170,28 @@
       padding: 3px;
       font-weight: bold;
     }
-  }
-  .menu__card1__desc {
+    &__desc{
     padding: 8px 0px 0px 15px;
     position: relative;
     line-height: 1.4;
-    i {
-      cursor: pointer;
-      position: absolute;
-
-      right: 20px;
-      top: 15px;
+      i {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+      }
+      i:hover {
+        color: $color-Primary;
+      }
     }
-    i:hover {
-      color: $color-Primary;
-    }
-  }
-}
+}  
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .menu__card1 {
+  .card{
     width: 48%;
+  }
+  .restaurants h2{
+    text-align: center;
+    padding: 25px 0px 25px 0px;
   }
 }
