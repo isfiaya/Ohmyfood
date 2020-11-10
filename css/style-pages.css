@@ -61,6 +61,7 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
 @-webkit-keyframes fadeIn {
@@ -263,4 +264,4 @@ a {
 .logo a:active {
   color: black;
 }
-/*# sourceMappingURL=bastille.css.map */
+/*# sourceMappingURL=style-pages.css.map */

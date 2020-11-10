@@ -2,7 +2,9 @@
 @import "utilises";
 @import "footer";
 @import "logo";
-
+nav ul{
+  display: none;
+}
 .location {
   background-color: $color-background;
   text-align: center;
@@ -36,17 +38,26 @@
       border-radius: 20px;
       background-image: $color-btn;
       color: white;
-      -webkit-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
-      -moz-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
       box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
       text-align: center;
       outline: none;
-      transition: all 0.5s ease-out;
     }
     button:hover {
+      opacity: 1;
+    }
+    button::after{
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      opacity:0;
+      z-index: -1;
       background-color: lighten($color-Primary, 8%);
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
+      transition: opacity 3s;  
     }
   }
 }
@@ -54,6 +65,9 @@
 main {
   margin-top: 35px;
   padding: 0 15px;
+  @media #{$minTablet} {
+    margin-top: 25px;
+  }
   h3 {
     padding: 5px 0px 22px 5px;
     font-weight: bold;
@@ -107,7 +121,7 @@ main {
 }
 @media (min-width: 768px)  and (max-width: 1023px) {
   main{
-    margin-top: 25px;
+    
   }
   main h3{
     text-align: center;
@@ -193,5 +207,23 @@ main {
   .restaurants h2{
     text-align: center;
     padding: 25px 0px 25px 0px;
+  }
+  nav{
+    border:solid 2px blueviolet;
+    height: 50px;
+    padding:15px;
+    }
+  .logo{
+    float: left;
+  }
+  nav ul{
+    display: inline;
+    float: right;
+    li{
+      float: left;
+      list-style-type: none;
+      margin-left: 20px;
+
+    }
   }
 }
