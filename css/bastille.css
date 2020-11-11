@@ -11,6 +11,13 @@
           justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .logo {
+    position: absolute;
+    bottom: 2px;
+  }
+}
+
 .logo img {
   width: 150px;
 }
@@ -97,6 +104,24 @@ a {
 .item:nth-child(3) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
 }
 
 .hero {

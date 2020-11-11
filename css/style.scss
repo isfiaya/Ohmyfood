@@ -2,6 +2,7 @@
 @import "utilises";
 @import "footer";
 @import "logo";
+@import "animation";
 .location {
   background-color: $color-background;
   text-align: center;
@@ -195,19 +196,33 @@ main {
 }
 nav {
   @media #{$minTablet} {
-    border: solid 2px blueviolet;
     height: 50px;
     padding: 15px;
+    position: relative;
+    margin-bottom: 5px;
   }
   ul {
     display: none;
     @media #{$minTablet} {
       display: inline;
-      float: right;
+      position: absolute;
+      bottom: 6px;
+      right: 16px;
       li {
         float: left;
         list-style-type: none;
         margin-left: 20px;
+        padding: 5px 14px;
+      }
+      .btn_contact {
+        border: white;
+        font-family: "Roboto", sans-serif;
+        border-radius: 20px;
+        background-image: $color-btn;
+        color: white;
+        text-align: center;
+        outline: none;
+        animation:flash 2s ease-in-out;
       }
     }
   }

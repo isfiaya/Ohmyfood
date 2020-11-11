@@ -1,10 +1,12 @@
+$minTablet:"(min-width:768px)";
 .logo {
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   @media #{$minTablet} {
-    float: left;
+    position: absolute;
+    bottom: 2px;
   }
   img {
     width: 150px;
