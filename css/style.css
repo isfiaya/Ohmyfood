@@ -59,12 +59,14 @@ footer {
           justify-content: center;
 }
 
-.logo img {
-  width: 150px;
+@media (min-width: 768px) {
+  .logo {
+    float: left;
+  }
 }
 
-nav ul {
-  display: none;
+.logo img {
+  width: 150px;
 }
 
 .location {
@@ -167,6 +169,13 @@ main h3 {
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  main h3 {
+    text-align: center;
+    font-size: x-large;
+  }
+}
+
 .main__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,6 +191,16 @@ main h3 {
   width: 90%;
   padding-left: 10px;
   margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .main__buttons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .main__buttons button {
@@ -203,9 +222,15 @@ main h3 {
   border: white;
   outline: none;
   -webkit-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
-  box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+          box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .main__buttons button {
+    width: 45%;
+  }
 }
 
 .main__buttons button span {
@@ -231,23 +256,6 @@ main h3 {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  main h3 {
-    text-align: center;
-    font-size: x-large;
-  }
-  .main__buttons {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    margin-top: 0;
-  }
-  .main__buttons button {
-    width: 45%;
-  }
-}
-
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
@@ -257,6 +265,13 @@ main h3 {
 .restaurants h2 {
   padding: 40px 0px 15px 20px;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .restaurants h2 {
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+  }
 }
 
 .cards {
@@ -285,6 +300,12 @@ main h3 {
   position: relative;
   -webkit-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
           box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 48%;
+  }
 }
 
 .card img {
@@ -324,22 +345,19 @@ main h3 {
   color: #9356DC;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .card {
-    width: 48%;
-  }
-  .restaurants h2 {
-    text-align: center;
-    padding: 25px 0px 25px 0px;
-  }
+@media (min-width: 768px) {
   nav {
     border: solid 2px blueviolet;
     height: 50px;
     padding: 15px;
   }
-  .logo {
-    float: left;
-  }
+}
+
+nav ul {
+  display: none;
+}
+
+@media (min-width: 768px) {
   nav ul {
     display: inline;
     float: right;
