@@ -106,6 +106,11 @@ a {
           animation-delay: 0.6s;
 }
 
+.item:nth-child(4) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
 @-webkit-keyframes flash {
   0%, 50%, 100% {
     opacity: 1;
@@ -207,8 +212,8 @@ a {
   display: flex;
   -webkit-box-shadow: 6px 10px 10px -10px rgba(0, 0, 0, 0.39);
           box-shadow: 6px 10px 10px -10px rgba(0, 0, 0, 0.39);
-  -webkit-transition: fadeIn 2s ease-in both;
-  transition: fadeIn 2s ease-in both;
+  -webkit-animation: fadeIn 2s ease-in both;
+          animation: fadeIn 2s ease-in both;
   line-height: 1.4;
 }
 
