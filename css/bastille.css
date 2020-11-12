@@ -157,18 +157,19 @@ a {
 }
 
 .menu__title {
-  padding: 15px 0px 0px 10px;
+  padding: 30px 0px 0px 15px;
   position: relative;
   margin-top: 10px;
   font-family: "Shrikhand", cursive;
-  font-weight: 100;
+  font-weight: 500;
   margin-bottom: -10px;
+  font-size: x-large;
 }
 
 .menu__title i {
   position: absolute;
-  right: 30px;
-  bottom: 10px;
+  right: 40px;
+  bottom: 8px;
 }
 
 .menu__list h5 {
