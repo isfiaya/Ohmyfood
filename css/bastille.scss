@@ -115,12 +115,16 @@
     i{
       font-size: 21px;
       color: white;
+      transition: all 1s ease-in-out;
     }
   }
 }
 .item:hover{
   .item__check{
   right: 0;
+  i{
+    transform: rotate(360deg);
+  }
   } 
   .item__desc{
     width: 70%;

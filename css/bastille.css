@@ -273,10 +273,17 @@ a {
 .item__check i {
   font-size: 21px;
   color: white;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .item:hover .item__check {
   right: 0;
+}
+
+.item:hover .item__check i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .item:hover .item__desc {
