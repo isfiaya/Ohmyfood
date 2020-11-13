@@ -11,7 +11,7 @@
   z-index: 1;
   img {
     width: 100%;
-    height: 200px;
+    height: 210px;
   }
 }
 .menu {
@@ -69,14 +69,16 @@
 .item{
   background-color: white;
   border-radius: 15px;
-  padding: 10px;
   position: relative;
   display: flex;
   box-shadow: 6px 10px 10px -10px rgba(0, 0, 0, 0.39);
   animation: fadeIn 2s ease-in both;
   line-height: 1.4;
+  overflow: hidden;
   &__desc {
     width: 88%;
+    padding: 10px;
+    transition: all 1s ease-in-out;
     :first-of-type {
       font-weight: bold;
       overflow: hidden;
@@ -94,6 +96,34 @@
   &__price {
     font-weight: bold;
     display: flex;
+    align-self: flex-end;
+    padding-bottom: 6px;
+    width: 5%;
+
+  }
+  &__check{
+    
+    background-color:$color-Tertiary;
+    position: absolute;
+    height: 100%; 
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -20%;
+    transition: all 1s ease-in-out;
+    i{
+      font-size: 21px;
+      color: white;
+    }
+  }
+}
+.item:hover{
+  .item__check{
+  right: 0;
+  } 
+  .item__desc{
+    width: 70%;
   }
 }
 

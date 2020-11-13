@@ -140,7 +140,7 @@ a {
 
 .hero img {
   width: 100%;
-  height: 200px;
+  height: 210px;
 }
 
 .menu {
@@ -206,7 +206,6 @@ a {
 .item {
   background-color: white;
   border-radius: 15px;
-  padding: 10px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,10 +215,14 @@ a {
   -webkit-animation: fadeIn 2s ease-in both;
           animation: fadeIn 2s ease-in both;
   line-height: 1.4;
+  overflow: hidden;
 }
 
 .item__desc {
   width: 88%;
+  padding: 10px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .item__desc :first-of-type {
@@ -242,6 +245,42 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 6px;
+  width: 5%;
+}
+
+.item__check {
+  background-color: #99E2D0;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: -20%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.item__check i {
+  font-size: 21px;
+  color: white;
+}
+
+.item:hover .item__check {
+  right: 0;
+}
+
+.item:hover .item__desc {
+  width: 70%;
 }
 
 .item_order {
