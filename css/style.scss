@@ -31,7 +31,7 @@ body {
 		justify-content: space-evenly;
 		height: 235px;
 		padding: 0 15px;
-		p {
+		h2 {
 			opacity: 55%;
 		}
 		button {
@@ -135,7 +135,7 @@ main {
 	background-color: $color-background;
 	width: 100%;
 	margin-top: 45px;
-	h2 {
+	h3 {
 		padding: 40px 0px 15px 20px;
 		font-weight: bold;
 		@media #{$minTablet} {
@@ -152,7 +152,7 @@ main {
 	width: 90%;
 	margin: auto;
 	padding-bottom: 50px;
-	p {
+	h5 {
 		opacity: 0.6;
 	}
 }
@@ -198,7 +198,7 @@ main {
 	overflow: hidden;
 	.empty_heart {
 		padding-top: 2px;
-		color: linear-gradient(45deg, #9356DC, #FF79DA);
+		color: linear-gradient(45deg, #9356dc, #ff79da);
 	}
 	.full_heart {
 		transform: translate(-36px, 0);

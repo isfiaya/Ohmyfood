@@ -172,14 +172,14 @@ a {
   bottom: 8px;
 }
 
-.menu__list h5 {
+.menu__list h2 {
   margin-top: 20px;
   padding: 10px 15px;
   font-weight: 500;
   position: relative;
 }
 
-.menu__list h5::after {
+.menu__list h2::after {
   content: "";
   width: 34px;
   height: 3px;
