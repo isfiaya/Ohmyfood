@@ -42,12 +42,17 @@ footer {
   display: block;
 }
 
+.info a:nth-of-type(3),
+.info a:nth-of-type(4) {
+  opacity: 0.8;
+}
+
 .info i {
   margin-right: 5px;
 }
 
 .logo {
-  height: 40px;
+  height: 3.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +214,7 @@ body {
 .location {
   background-color: #f6f6f6;
   text-align: center;
-  height: 17em;
+  height: 19em;
 }
 
 .location__nav {
@@ -223,7 +228,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #eaeaea;
-  height: 2em;
+  height: 3em;
 }
 
 .location__nav i {
@@ -247,12 +252,18 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 235px;
+  height: 240px;
   padding: 0 15px;
 }
 
+.location__menu h1 {
+  font-size: 1.7em;
+}
+
 .location__menu h2 {
-  opacity: 55%;
+  opacity: 45%;
+  font-weight: 100;
+  font-size: 1.2em;
 }
 
 .location__menu button {
@@ -264,34 +275,14 @@ body {
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
   background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   color: white;
-  -webkit-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
-          box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
   text-align: center;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   outline: none;
 }
 
-.location__menu button:hover {
-  opacity: 1;
-}
-
-.location__menu button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: -1;
-  background-color: #a978e3;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  -webkit-transition: opacity 3s;
-  transition: opacity 3s;
-}
-
 main {
-  margin-top: 35px;
+  margin-top: 28px;
   padding: 0 15px;
 }
 
@@ -302,7 +293,7 @@ main {
 }
 
 main h3 {
-  padding: 5px 0px 22px 5px;
+  padding: 8px 0px 0px 5px;
   font-weight: bold;
 }
 
@@ -310,6 +301,7 @@ main h3 {
   main h3 {
     text-align: center;
     font-size: x-large;
+    padding-bottom: 25px;
   }
 }
 
@@ -358,8 +350,8 @@ main h3 {
   border-radius: 20px;
   border: white;
   outline: none;
-  -webkit-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
-          box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
@@ -385,22 +377,28 @@ main h3 {
 
 .main__buttons button i {
   margin-right: 20px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .main__buttons button:hover {
   background-color: #f5edff;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.main__buttons button:hover i {
+  color: #9356DC;
 }
 
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
-  margin-top: 45px;
+  margin-top: 57px;
 }
 
 .restaurants h3 {
-  padding: 40px 0px 15px 20px;
+  padding: 40px 0px 18px 20px;
   font-weight: bold;
 }
 
@@ -408,6 +406,7 @@ main h3 {
   .restaurants h3 {
     text-align: center;
     padding: 25px 0px 25px 0px;
+    font-size: x-large;
   }
 }
 
@@ -421,11 +420,13 @@ main h3 {
   margin-top: 10px;
   width: 90%;
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 59px;
 }
 
 .cards h5 {
   opacity: 0.6;
+  font-size: 16px;
+  font-weight: 100;
 }
 
 .card {
@@ -447,7 +448,7 @@ main h3 {
 
 .card img {
   width: 100%;
-  height: 71%;
+  height: 69%;
 }
 
 .card span {
@@ -464,7 +465,7 @@ main h3 {
 }
 
 .card__desc {
-  padding: 8px 0px 0px 15px;
+  padding: 7px 0px 0px 15px;
   position: relative;
   line-height: 23px;
 }
@@ -472,16 +473,18 @@ main h3 {
 .card__react {
   cursor: pointer;
   position: absolute;
-  right: 0px;
-  top: 13px;
+  right: -9px;
+  top: 16px;
   overflow: hidden;
 }
 
 .card__react .empty_heart {
   padding-top: 2px;
   background: white;
-  -webkit-transform: translate(-36px, 0);
-          transform: translate(-36px, 0);
+  -webkit-transform: translate(-30px, 0);
+          transform: translate(-30px, 0);
+  font-size: 26px;
+  height: 30px;
 }
 
 .card__react .full_heart {
@@ -489,35 +492,38 @@ main h3 {
   background: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  height: 30px;
+  padding-top: 6px;
+  font-size: 26px;
 }
 
 .empty_heart:hover {
-  -webkit-animation: fillheart 1s ease-in-out forwards;
-          animation: fillheart 1s ease-in-out forwards;
+  -webkit-animation: fillheart 1s ease-out forwards;
+          animation: fillheart 1s ease-out forwards;
 }
 
 @-webkit-keyframes fillheart {
   0% {
-    -webkit-transform: translate(-36px, 0);
-            transform: translate(-36px, 0);
+    -webkit-transform: translate(-30px, 0);
+            transform: translate(-30px, 0);
     color: white;
   }
   100% {
-    -webkit-transform: translate(-36px, -30px);
-            transform: translate(-36px, -30px);
+    -webkit-transform: translate(-30px, -30px);
+            transform: translate(-30px, -30px);
     color: white;
   }
 }
 
 @keyframes fillheart {
   0% {
-    -webkit-transform: translate(-36px, 0);
-            transform: translate(-36px, 0);
+    -webkit-transform: translate(-30px, 0);
+            transform: translate(-30px, 0);
     color: white;
   }
   100% {
-    -webkit-transform: translate(-36px, -30px);
-            transform: translate(-36px, -30px);
+    -webkit-transform: translate(-30px, -30px);
+            transform: translate(-30px, -30px);
     color: white;
   }
 }

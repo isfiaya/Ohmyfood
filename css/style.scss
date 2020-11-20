@@ -12,13 +12,13 @@ body {
 .location {
 	background-color: $color-background;
 	text-align: center;
-	height: 17em;
+	height: 19em;
 	&__nav {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		background-color: #eaeaea;
-		height: 2em;
+		height: 3em;
 		i {
 			margin-right: 17px;
 		}
@@ -29,10 +29,15 @@ body {
 		align-items: center;
 		flex-direction: column;
 		justify-content: space-evenly;
-		height: 235px;
+		height: 240px;
 		padding: 0 15px;
+		h1 {
+			font-size: 1.7em;
+		}
 		h2 {
-			opacity: 55%;
+			opacity: 45%;
+			font-weight: 100;
+			font-size: 1.2em;
 		}
 		button {
 			border: white;
@@ -42,41 +47,27 @@ body {
 			border-radius: 20px;
 			background-image: $color-btn;
 			color: white;
-			box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
 			text-align: center;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),
+				0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 			outline: none;
-		}
-		button:hover {
-			opacity: 1;
-		}
-		button::after {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			opacity: 0;
-			z-index: -1;
-			background-color: lighten($color-Primary, 8%);
-			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-			transition: opacity 3s;
 		}
 	}
 }
 
 main {
-	margin-top: 35px;
+	margin-top: 28px;
 	padding: 0 15px;
 	@media #{$minTablet} {
 		margin-stop: 25px;
 	}
 	h3 {
-		padding: 5px 0px 22px 5px;
+		padding: 8px 0px 0px 5px;
 		font-weight: bold;
 		@media #{$minTablet} {
 			text-align: center;
 			font-size: x-large;
+			padding-bottom: 25px;
 		}
 	}
 }
@@ -105,7 +96,7 @@ main {
 		border-radius: 20px;
 		border: white;
 		outline: none;
-		box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 		transition: all 0.7s ease-in-out;
 		@media #{$minTablet} {
 			width: 45%;
@@ -124,23 +115,28 @@ main {
 		}
 		i {
 			margin-right: 20px;
+			transition: all 0.7s ease-in-out;
 		}
 	}
 	button:hover {
 		background-color: #f5edff;
-		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+		i {
+			color: $color-Primary;
+		}
 	}
 }
 .restaurants {
 	background-color: $color-background;
 	width: 100%;
-	margin-top: 45px;
+	margin-top: 57px;
 	h3 {
-		padding: 40px 0px 15px 20px;
+		padding: 40px 0px 18px 20px;
 		font-weight: bold;
 		@media #{$minTablet} {
 			text-align: center;
 			padding: 25px 0px 25px 0px;
+			font-size: x-large;
 		}
 	}
 }
@@ -151,9 +147,11 @@ main {
 	margin-top: 10px;
 	width: 90%;
 	margin: auto;
-	padding-bottom: 50px;
+	padding-bottom: 59px;
 	h5 {
 		opacity: 0.6;
+		font-size: 16px;
+		font-weight: 100;
 	}
 }
 .card {
@@ -169,7 +167,7 @@ main {
 	}
 	img {
 		width: 100%;
-		height: 71%;
+		height: 69%;
 	}
 	span {
 		position: absolute;
@@ -184,7 +182,7 @@ main {
 		font-weight: bold;
 	}
 	&__desc {
-		padding: 8px 0px 0px 15px;
+		padding: 7px 0px 0px 15px;
 		position: relative;
 		line-height: 23px;
 	}
@@ -192,30 +190,35 @@ main {
 .card__react {
 	cursor: pointer;
 	position: absolute;
-	right: 0px;
-	top: 13px;
+	right: -9px;
+	top: 16px;
 	overflow: hidden;
 	.empty_heart {
 		padding-top: 2px;
 		background: white;
-		transform: translate(-36px, 0);
+		transform: translate(-30px, 0);
+		font-size: 26px;
+		height: 30px;
 	}
 	.full_heart {
 		background: $color-btn;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		height: 30px;
+		padding-top: 6px;
+		font-size: 26px;
 	}
 }
 .empty_heart:hover {
-	animation: fillheart 1s ease-in-out forwards;
+	animation: fillheart 1s ease-out forwards;
 }
 @keyframes fillheart {
 	0% {
-		transform: translate(-36px, 0);
+		transform: translate(-30px, 0);
 		color: white;
 	}
 	100% {
-		transform: translate(-36px, -30px);
+		transform: translate(-30px, -30px);
 		color: white;
 	}
 }
