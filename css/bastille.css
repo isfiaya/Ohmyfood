@@ -249,6 +249,36 @@ a {
   }
 }
 
+@-webkit-keyframes animation-bgd {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+            transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+
+@keyframes animation-bgd {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+            transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+
 .hero {
   width: 100%;
   height: -webkit-fit-content;
@@ -256,6 +286,7 @@ a {
   height: fit-content;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .hero img {
@@ -266,6 +297,8 @@ a {
 @media (min-width: 768px) {
   .hero img {
     height: 55vh;
+    -webkit-animation: animation-bgd 5s ease-out both;
+            animation: animation-bgd 5s ease-out both;
   }
 }
 
