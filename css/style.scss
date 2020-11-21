@@ -8,7 +8,12 @@
 body {
 	overflow: hidden;
 }
-
+.logo {
+	@media #{$minTablet} {
+		float: left;
+		height: auto;
+	}
+}
 .location {
 	background-color: $color-background;
 	text-align: center;
@@ -35,8 +40,7 @@ body {
 			font-size: 1.7em;
 		}
 		h2 {
-			opacity: 45%;
-			font-weight: 100;
+			font-weight: 300;
 			font-size: 1.2em;
 		}
 		button {
@@ -48,9 +52,15 @@ body {
 			background-image: $color-btn;
 			color: white;
 			text-align: center;
-			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),
-				0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+			box-shadow: $btn-shadow;
 			outline: none;
+			transition: all 700ms ease-in-out;
+			@media #{$minTablet} {
+				animation: bounceInLeft 1s 3.1s ease-in-out forwards;
+			}
+		}
+		button:hover {
+			transform: scale(1.15);
 		}
 	}
 }
@@ -96,7 +106,7 @@ main {
 		border-radius: 20px;
 		border: white;
 		outline: none;
-		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+		box-shadow: $btn-main-shadow;
 		transition: all 0.7s ease-in-out;
 		@media #{$minTablet} {
 			width: 45%;
@@ -149,9 +159,9 @@ main {
 	margin: auto;
 	padding-bottom: 59px;
 	h5 {
-		opacity: 0.6;
+		opacity: 84%;
 		font-size: 16px;
-		font-weight: 100;
+		font-weight: 400;
 	}
 }
 .card {
@@ -161,7 +171,8 @@ main {
 	height: 225px;
 	background-color: white;
 	position: relative;
-	box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+	box-shadow: $btn-main-shadow;
+	animation: zoomin 1s 3.1s ease-in-out forwards;
 	@media #{$minTablet} {
 		width: 48%;
 	}
@@ -188,12 +199,12 @@ main {
 	}
 }
 .card__react {
-	cursor: pointer;
 	position: absolute;
-	right: -9px;
+	right: 0px;
 	top: 16px;
 	overflow: hidden;
 	.empty_heart {
+		cursor: pointer;
 		padding-top: 2px;
 		background: white;
 		transform: translate(-30px, 0);
@@ -212,16 +223,6 @@ main {
 .empty_heart:hover {
 	animation: fillheart 1s ease-out forwards;
 }
-@keyframes fillheart {
-	0% {
-		transform: translate(-30px, 0);
-		color: white;
-	}
-	100% {
-		transform: translate(-30px, -30px);
-		color: white;
-	}
-}
 
 nav {
 	@media #{$minTablet} {
@@ -233,16 +234,15 @@ nav {
 	ul {
 		display: none;
 		@media #{$minTablet} {
-			display: inline;
-			position: absolute;
-			bottom: 6px;
-			right: 16px;
+			display: inline-block;
+			float: right;
 			li {
 				float: left;
 				list-style-type: none;
 				margin-left: 20px;
 				padding: 5px 14px;
 				font-size: 13px;
+				font-weight: 500;
 			}
 			.btn_contact {
 				border: white;
@@ -252,7 +252,7 @@ nav {
 				color: white;
 				text-align: center;
 				outline: none;
-				animation: flash 2s ease-in-out;
+				animation: flash 2s 3.2s ease-in-out;
 			}
 		}
 	}

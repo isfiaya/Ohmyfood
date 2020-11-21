@@ -1,14 +1,17 @@
 //variables
+$btn-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),
+	0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+$btn-main-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 //colors
-$color-Primary:#9356DC;
-$color-Secondary:#FF79DA;
-$color-Tertiary:#99E2D0;
-$color-background:#f6f6f6;
-$color-btn:linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+$color-Primary: #9356dc;
+$color-Secondary: #ff79da;
+$color-Tertiary: #99e2d0;
+$color-background: #f6f6f6;
+$color-btn: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 //Fonts
-$font-page:'Roboto', sans-serif;
+$font-page: 'Roboto', sans-serif;
 
 //media query
-$maxPhone:"(max-width:767px)";
-$minTablet:"(min-width:768px)";
-$minLaptop:"(min-width:992px)";
+$maxPhone: "(max-width:767px)";
+$minTablet: "(min-width:768px)";
+$minLaptop: "(min-width:992px)";

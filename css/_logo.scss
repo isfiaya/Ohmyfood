@@ -4,10 +4,6 @@ $minTablet: "(min-width:768px)";
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	@media #{$minTablet} {
-		position: absolute;
-		bottom: 2px;
-	}
 	img {
 		width: 150px;
 	}

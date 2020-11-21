@@ -64,13 +64,6 @@ footer {
           justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .logo {
-    position: absolute;
-    bottom: 2px;
-  }
-}
-
 .logo img {
   width: 150px;
 }
@@ -117,20 +110,142 @@ footer {
 }
 
 @-webkit-keyframes flash {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     opacity: 1;
   }
-  25%, 75% {
+  25%,
+  75% {
     opacity: 0;
   }
 }
 
 @keyframes flash {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     opacity: 1;
   }
-  25%, 75% {
+  25%,
+  75% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes fillheart {
+  0% {
+    -webkit-transform: translate(-30px, 0);
+            transform: translate(-30px, 0);
+    color: white;
+  }
+  100% {
+    -webkit-transform: translate(-30px, -30px);
+            transform: translate(-30px, -30px);
+    color: white;
+  }
+}
+
+@keyframes fillheart {
+  0% {
+    -webkit-transform: translate(-30px, 0);
+            transform: translate(-30px, 0);
+    color: white;
+  }
+  100% {
+    -webkit-transform: translate(-30px, -30px);
+            transform: translate(-30px, -30px);
+    color: white;
+  }
+}
+
+@-webkit-keyframes fillheart-menu-pages {
+  0% {
+    -webkit-transform: translate(-30px, 0);
+            transform: translate(-30px, 0);
+    color: #f1f1f0;
+  }
+  100% {
+    -webkit-transform: translate(-30px, -30px);
+            transform: translate(-30px, -30px);
+    color: #f1f1f0;
+  }
+}
+
+@keyframes fillheart-menu-pages {
+  0% {
+    -webkit-transform: translate(-30px, 0);
+            transform: translate(-30px, 0);
+    color: #f1f1f0;
+  }
+  100% {
+    -webkit-transform: translate(-30px, -30px);
+            transform: translate(-30px, -30px);
+    color: #f1f1f0;
+  }
+}
+
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -211,6 +326,13 @@ body {
   overflow: hidden;
 }
 
+@media (min-width: 768px) {
+  .logo {
+    float: left;
+    height: auto;
+  }
+}
+
 .location {
   background-color: #f6f6f6;
   text-align: center;
@@ -261,8 +383,7 @@ body {
 }
 
 .location__menu h2 {
-  opacity: 45%;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.2em;
 }
 
@@ -279,6 +400,20 @@ body {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   outline: none;
+  -webkit-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .location__menu button {
+    -webkit-animation: bounceInLeft 1s 3.1s ease-in-out forwards;
+            animation: bounceInLeft 1s 3.1s ease-in-out forwards;
+  }
+}
+
+.location__menu button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 main {
@@ -363,7 +498,7 @@ main h3 {
 }
 
 .main__buttons button span {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   font-weight: bold;
   width: 1.6em;
@@ -388,7 +523,7 @@ main h3 {
 }
 
 .main__buttons button:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .restaurants {
@@ -424,9 +559,9 @@ main h3 {
 }
 
 .cards h5 {
-  opacity: 0.6;
+  opacity: 84%;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .card {
@@ -436,8 +571,10 @@ main h3 {
   height: 225px;
   background-color: white;
   position: relative;
-  -webkit-box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
-          box-shadow: 3px 6px 7px -4px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  -webkit-animation: zoomin 1s 3.1s ease-in-out forwards;
+          animation: zoomin 1s 3.1s ease-in-out forwards;
 }
 
 @media (min-width: 768px) {
@@ -453,7 +590,7 @@ main h3 {
 
 .card span {
   position: absolute;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #278870;
   right: 15px;
   top: 13px;
@@ -471,14 +608,14 @@ main h3 {
 }
 
 .card__react {
-  cursor: pointer;
   position: absolute;
-  right: -9px;
+  right: 0px;
   top: 16px;
   overflow: hidden;
 }
 
 .card__react .empty_heart {
+  cursor: pointer;
   padding-top: 2px;
   background: white;
   -webkit-transform: translate(-30px, 0);
@@ -502,32 +639,6 @@ main h3 {
           animation: fillheart 1s ease-out forwards;
 }
 
-@-webkit-keyframes fillheart {
-  0% {
-    -webkit-transform: translate(-30px, 0);
-            transform: translate(-30px, 0);
-    color: white;
-  }
-  100% {
-    -webkit-transform: translate(-30px, -30px);
-            transform: translate(-30px, -30px);
-    color: white;
-  }
-}
-
-@keyframes fillheart {
-  0% {
-    -webkit-transform: translate(-30px, 0);
-            transform: translate(-30px, 0);
-    color: white;
-  }
-  100% {
-    -webkit-transform: translate(-30px, -30px);
-            transform: translate(-30px, -30px);
-    color: white;
-  }
-}
-
 @media (min-width: 768px) {
   nav {
     height: 50px;
@@ -543,10 +654,8 @@ nav ul {
 
 @media (min-width: 768px) {
   nav ul {
-    display: inline;
-    position: absolute;
-    bottom: 6px;
-    right: 16px;
+    display: inline-block;
+    float: right;
   }
   nav ul li {
     float: left;
@@ -554,6 +663,7 @@ nav ul {
     margin-left: 20px;
     padding: 5px 14px;
     font-size: 13px;
+    font-weight: 500;
   }
   nav ul .btn_contact {
     border: white;
@@ -564,8 +674,8 @@ nav ul {
     color: white;
     text-align: center;
     outline: none;
-    -webkit-animation: flash 2s ease-in-out;
-            animation: flash 2s ease-in-out;
+    -webkit-animation: flash 2s 3.2s ease-in-out;
+            animation: flash 2s 3.2s ease-in-out;
   }
 }
 /*# sourceMappingURL=style.css.map */
