@@ -52,14 +52,7 @@
 @keyframes bounceInLeft {
 	0% {
 		opacity: 0;
-		transform: translateX(-2000px);
-	}
-	60% {
-		opacity: 1;
-		transform: translateX(30px);
-	}
-	80% {
-		transform: translateX(-10px);
+		transform: translateX(-150px);
 	}
 	100% {
 		transform: translateX(0);
@@ -81,5 +74,15 @@
 	100% {
 		transform: scale(1.25) translateY(15px);
 		transform-origin: bottom;
+	}
+}
+@keyframes contact {
+	0% {
+		margin-left: 50px;
+		opacity: 0;
+	}
+	100% {
+		margin-left: 0;
+		opacity: 1;
 	}
 }

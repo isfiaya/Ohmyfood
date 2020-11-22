@@ -54,9 +54,9 @@ body {
 			text-align: center;
 			box-shadow: $btn-shadow;
 			outline: none;
-			transition: all 700ms ease-in-out;
+			transition: all 400ms ease-in-out;
 			@media #{$minTablet} {
-				animation: bounceInLeft 1s 3.1s ease-in-out forwards;
+				animation: bounceInLeft 1s 3.1s cubic-bezier(0.4, 0, 1, 1.43) forwards;
 			}
 		}
 		button:hover {
@@ -107,7 +107,7 @@ main {
 		border: white;
 		outline: none;
 		box-shadow: $btn-main-shadow;
-		transition: all 0.7s ease-in-out;
+		transition: all 0.4s ease-in-out;
 		@media #{$minTablet} {
 			width: 45%;
 		}
@@ -221,7 +221,7 @@ main {
 	}
 }
 .empty_heart:hover {
-	animation: fillheart 1s ease-out forwards;
+	animation: fillheart 400ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
 }
 
 nav {
@@ -256,7 +256,7 @@ nav {
 				color: white;
 				text-align: center;
 				outline: none;
-				animation: flash 2s 3.2s ease-in-out;
+				animation: flash 1s 3.5s ease-in-out;
 			}
 		}
 	}

@@ -94,8 +94,10 @@
 		font-size: 26px;
 	}
 }
-.empty_heart:hover {
-	animation: fillheart-menu-pages 1s ease-out forwards;
+.empty_heart {
+	&:hover {
+		animation: fillheart-menu-pages 400ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+	}
 }
 
 .items {
@@ -116,13 +118,13 @@
 	position: relative;
 	display: flex;
 	box-shadow: $btn-main-shadow;
-	animation: fadeIn 2s ease-in both;
+	animation: fadeIn 1s ease-in-out both;
 	line-height: 1.4;
 	overflow: hidden;
 	&__desc {
 		width: 88%;
 		padding: 10px;
-		transition: all 1s ease-in-out;
+		transition: all .3s cubic-bezier(.4, 0, .2, 1);
 		:first-of-type {
 			font-weight: bold;
 			overflow: hidden;
@@ -153,11 +155,11 @@
 		justify-content: center;
 		align-items: center;
 		right: -20%;
-		transition: all 1s ease-in-out;
+		transition: all .3s cubic-bezier(.4, 0, .2, 1);
 		i {
 			font-size: 21px;
 			color: white;
-			transition: all 1s ease-in-out;
+			transition: all .4s cubic-bezier(.4, 0, .2, 1);
 		}
 	}
 }
@@ -187,7 +189,7 @@
 		border: white;
 		outline: none;
 		box-shadow: $btn-shadow;
-		transition: all 700ms ease-in-out;
+		transition: all 400ms ease-in-out;
 	}
 	button:hover {
 		transform: scale(1.15);
