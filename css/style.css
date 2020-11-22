@@ -261,28 +261,6 @@ footer {
   }
 }
 
-@-webkit-keyframes contact {
-  0% {
-    margin-left: 50px;
-    opacity: 0;
-  }
-  100% {
-    margin-left: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes contact {
-  0% {
-    margin-left: 50px;
-    opacity: 0;
-  }
-  100% {
-    margin-left: 0;
-    opacity: 1;
-  }
-}
-
 .loader-container {
   position: fixed;
   display: -webkit-box;
