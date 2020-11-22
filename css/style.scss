@@ -68,9 +68,6 @@ body {
 main {
 	margin-top: 28px;
 	padding: 0 15px;
-	@media #{$minTablet} {
-		margin-stop: 25px;
-	}
 	h3 {
 		padding: 8px 0px 0px 5px;
 		font-weight: bold;

@@ -433,12 +433,6 @@ main {
   padding: 0 15px;
 }
 
-@media (min-width: 768px) {
-  main {
-    margin-stop: 25px;
-  }
-}
-
 main h3 {
   padding: 8px 0px 0px 5px;
   font-weight: bold;
