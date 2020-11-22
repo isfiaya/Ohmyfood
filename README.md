@@ -4,7 +4,7 @@
 
 [My web page hosted online on GitHub Pages](https://isfiaya.github.io/Reservia/)
 
-# Graphic Effects and Animations
+## Graphic Effects and Animations
 ## Home Page 
 - when arrive on the home page a loading spinner will be cover the whole screen for 3 seconds
 ## Menu Pages
