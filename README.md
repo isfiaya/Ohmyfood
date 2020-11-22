@@ -1,5 +1,5 @@
-![ohmyfood Logo](img/ohmyfood.png)
-# ohmyfood: Ohmyfood is an online food ordering company
+
+# ohmyfood: Online food ordering
 *Integrate a mobile website with animations in CSS*
 
 [My web page hosted online on GitHub Pages](https://isfiaya.github.io/Reservia/)
