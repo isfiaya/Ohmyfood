@@ -2,7 +2,7 @@
 # ohmyfood: Online food ordering
 *Integrate a mobile website with animations in CSS*
 
-[My web page hosted online on GitHub Pages](https://isfiaya.github.io/Reservia/)
+[My web page hosted online on GitHub Pages](https://isfiaya.github.io/Ohmyfood/)
 
 ## Graphic Effects and Animations
 ## Home Page 
